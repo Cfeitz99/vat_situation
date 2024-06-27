@@ -17,7 +17,7 @@ app.get('/', async (req, res) => {
   // Trigger the webhook for every request with a deal_id and situation
   if (deal_id && situation) {
     try {
-      await axios.post('https://hooks.zapier.com/hooks/catch/14846189/3vgmv81/', { deal_id, situation });
+      await axios.post('https://hooks.zapier.com/hooks/catch/14846189/2blt82k/', { deal_id, situation });
       console.log(`Webhook triggered for deal_id ${deal_id} with situation ${situation}`);
     } catch (error) {
       console.error(`Failed to trigger webhook for deal_id ${deal_id} with situation ${situation}: ${error}`);
